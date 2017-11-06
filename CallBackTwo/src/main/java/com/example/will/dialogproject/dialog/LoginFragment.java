@@ -51,6 +51,8 @@ public class LoginFragment extends DialogFragment {
         return builder.create();
     }
 
+    public LoginInputListener loginInputListener;
+
     public interface LoginInputListener {
         void onLoginInputComplete(String name, String pwd);
     }
@@ -59,6 +61,5 @@ public class LoginFragment extends DialogFragment {
         this.loginInputListener = loginInputListener;
     }
 
-    public LoginInputListener loginInputListener;
 
 }
